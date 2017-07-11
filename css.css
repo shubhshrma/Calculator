@@ -1,8 +1,28 @@
 body{
-	background-color: #33CCCC;
+	background-color: #CC0066;
 	color:#0000FF;
 }
+#calculator{
+	background-color: black;
+	padding-left: auto;
+	padding-right: auto;
+	display: inline-block;
+    width:20%;
+    height:35%;
+}
+#result{
+	background-color: white;	
+	padding: 20px;
+	border-top:10px solid black;
+	
+	border-right:2px solid black;
 
+	border-left:2px solid black;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
 #buttons{
-	padding: 0.2em;
+	padding: 2em;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

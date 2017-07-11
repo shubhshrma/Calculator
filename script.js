@@ -1,7 +1,5 @@
 $(document).ready(function(){
-
 	
-
 	function updateScreen(value){
 		if($("#screen").text()==='0')
 			$("#screen").html(value);
