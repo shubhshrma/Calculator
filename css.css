@@ -1,28 +1,61 @@
 body{
 	background-color: #CC0066;
-	color:#0000FF;
+	font-family: 'Exo', sans-serif;
+	width: 100%;
+}
+h1{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 4em;
+	margin-top: 50px;
+	color:#ccff99;
 }
 #calculator{
+
 	background-color: black;
-	padding-left: auto;
-	padding-right: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	display: inline-block;
-    width:20%;
-    height:35%;
+	width:23%; 
+	min-width: 250px;
+    border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	
 }
 #result{
+	font-size: 2em;
 	background-color: white;	
 	padding: 20px;
 	border-top:10px solid black;
-	
-	border-right:2px solid black;
-
-	border-left:2px solid black;
+	margin-top: 10px;
+	border-right:4px solid black;
+	border-left:4px solid black;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
+
 #buttons{
-	padding: 2em;
+	margin:30px auto;
+	padding: 20px;
+}
+button{
+	margin:10px;
+
+}
+#last-row button{
+	width: 55px;
+	
+}
+#footer{
 	margin-top: 20px;
-	margin-bottom: 20px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+color: #ccff99;
+text-decoration: none;
+
 }

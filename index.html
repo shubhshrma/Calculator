@@ -4,17 +4,17 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-   
-     
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Exo|Ubuntu+Condensed" rel="stylesheet"> 
     <script type="text/javascript" src="script.js"></script> 
-  <link rel="stylesheet" type="text/css" href="css.css">
+  	<link rel="stylesheet" type="text/css" href="css.css">
 	<title>Calculator</title>
 </head>
 <body>
@@ -27,30 +27,39 @@
 	</div>
 	
 	<div id="buttons">
-		<button class="btn btn-danger" id="ac">AC</button>
-		<button class="btn btn-danger" id="ce">CE</button>
-		<button class="btn btn-primary" id="%">%</button>
-		<button class="btn btn-primary" id="/">/</button>
-		<br>
-		<button class="btn btn-primary" id="7">7</button>
-		<button class="btn btn-primary" id="8">8</button>
-		<button class="btn btn-primary" id="9">9</button>
-		<button class="btn btn-primary" id="*">*</button>
-		<br>
-		<button class="btn btn-primary" id="4">4</button>
-		<button class="btn btn-primary" id="5">5</button>
-		<button class="btn btn-primary" id="6">6</button>
-		<button class="btn btn-primary" id="-">-</button>
-		<br>
-		<button class="btn btn-primary"  id="1">1</button>
-		<button class="btn btn-primary"  id="2">2</button>
-		<button class="btn btn-primary" id="3">3</button>
-		<button class="btn btn-primary" id="+">+</button>
-		<br>
-		<button class="btn btn-primary" id="0">0</button>
-		<button class="btn btn-primary" id=".">.</button>
-		<button class="btn btn-primary" id="=">=</button>
+	<div class="row" >
+	    <div class="col-md-3 col-xs-3"><button class="btn btn-danger " id="ac">AC</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-danger " id="ce">CE</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="%">%</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="/">/</button></div>
 	</div>
+	<div class="row">	
+		<div class="col-md-3  col-xs-3"><button class="btn btn-primary" id="7">7</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="8">8</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="9">9</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="*">*</button></div>
+	</div>
+	<div class="row">	
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="4">4</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="5">5</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="6">6</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="-">-</button></div>
+	</div>
+	<div class="row">	
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary"  id="1">1</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary"  id="2">2</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="3">3</button></div>
+		<div class="col-md-3 col-xs-3"><button class="btn btn-primary" id="+">+</button></div>
+	</div>
+	<div class="row" id="last-row">	
+		<div class="col-md-4 col-xs-4"><button class="btn btn-primary" id="0">0</button></div>
+		<div class="col-md-4 col-xs-4"><button class="btn btn-primary" id=".">.</button></div>
+		<div class="col-md-4 col-xs-4"><button class="btn btn-primary" id="=">=</button></div>
+	</div>
+	</div>
+	</div>
+	<div id="footer">
+		<footer>Designed and coded by <a target="/blank" href="https://www.github.com/shubhshrma">shubham</a></footer>
 	</div>
 	</div>
 </body>
