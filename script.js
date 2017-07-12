@@ -1,15 +1,19 @@
 $(document).ready(function(){
 	
 	function updateScreen(value){
-		if($("#result").text()==='0' && !value.match(/[+\-*/%\.]/))
-			$("#result").html(value);
-		else	
-		$("#result").append(value);
+		if($("#screen").text()==='0' && value.match(/[+\-*/%\.]/)===null ){
+			$("#screen").html(value);
+			
+		}
+		else{
+		$("#screen").append(value);
+		
+	     }
 	}
 
 
 	function update(value){
-		var text=$("#result").text();
+		var text=$("#screen").text();
 		
 		if(Number(value)>=0 && Number(value)<=9 )
 			updateScreen(value);
@@ -28,11 +32,11 @@ $(document).ready(function(){
 
 			else if( text.search(/[+\-*/%=]/)!==-1 ){
 				if(value=='=')
-					$("#result").html(eval(text));
+					$("#screen").html(eval(text));
 				else if(text[text.length-1].match(/[+\-*/%]/))
 				{}
 				else
-				$("#result").html(eval(text)+value);
+				$("#screen").html(eval(text)+value);
 
 			}
 
@@ -46,17 +50,15 @@ $(document).ready(function(){
 							
 		}
 		else if(value=='ac')
-			$("#result").html(0);
+			$("#screen").html(0);
 		else if(value=='ce'){
 			if(text.length==1)
-				$("#result").html(0);
+				$("#screen").html(0);
 			else
-			$("#result").html(text.substring(0,text.length-1));
+			$("#screen").html(text.substring(0,text.length-1));
 			
 		}
-
-
-	}
+   }
 
 	$("button").on("click",function(){
 
